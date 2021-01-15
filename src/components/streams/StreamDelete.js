@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 
 import Modal from '../Modal'
 import history from '../../history'
-import { fecthStream, deleteStream } from '../../actions'
+import { fetchStream, deleteStream } from '../../actions'
 
 class StreamDelete extends React.Component {
 
     componentDidMount() {
-        this.props.fecthStream(this.props.match.params.id)
+        this.props.fetchStream(this.props.match.params.id)
     }
 
     renderActions() {
@@ -54,5 +54,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
     mapStateToProps, 
-    { fecthStream, deleteStream }
+    { fetchStream, deleteStream }
 )(StreamDelete)

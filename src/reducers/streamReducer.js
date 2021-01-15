@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import _ from 'lodash'
 import  {
     FETCH_STREAM,
